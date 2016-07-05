@@ -16,7 +16,10 @@ ng new my-app
 ```
 
 So now we have our base application, now what? Lets run it and see what happens. running `ng serve` will build and run your application locally. You should see something similar to the following output.
-![ng serve screenshot](images/blog-post-todo-01.tiff)
+![ng serve screenshot](/images/blog-post-todo-02.jpg)
+
+And if we open our browser to http://localhost:4200/ we see the follow, our application is up and running with minimal effort!
+![app running locally](/images/blog-post-todo-01.jpg)
 
 At this point in time you would generally have to configure something like Grunt or Gulp to build your app. Thanks to the angular-cli you can now just run `ng build` and everything is taken care of for you!
 
