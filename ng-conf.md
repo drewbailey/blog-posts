@@ -1,8 +1,8 @@
-## Up And running with Angular 2 in 60ish seconds
+## Up and running with Angular 2 and the Angular-CLI
 
+There has been a lot of talk about Angular 2 and all the new features it brings. Whether you are interested in playing around with the new framework to see what its all about or are getting ready to use it for your next application, setting up something new is never something people look forward to. Luckily, the [angular-cli](https://cli.angular.io/) makes it a breeze to get up and running with the latest and greatest angular has to offer.
 
-I recently just had the opporuntity to attend NG-Conf in Salt Lake City. This year was all about the next version of Angular, Angular 2.
-
+In this post we will go from new a directory to deploying all thanks to the angular cli.
 
 - Brief intro to Angular 2, maybe some type script
 - Tooling
