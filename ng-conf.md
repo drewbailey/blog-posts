@@ -23,11 +23,9 @@ And if we open our browser to http://localhost:4200/ we see the following, our a
 
 
 ### Deploy our Application
-So far we have seen how the Angular-CLI can create and run our application locally, but what if we want to deploy it? The Angular-CLI provides us a way to quickly allow others to see our application by using [github pages](https://pages.github.com/). To deploy our application we just need to simply run
+So far we have seen how the Angular-CLI can create and run our application locally, but what if we want to deploy it? The Angular-CLI provides us a way to quickly allow others to see our application by using [github pages](https://pages.github.com/). To deploy our application we just need to simply run a single command, `ng github-pages:deploy` and our app will be live on github! Below is the output and instructions provided by the tool.
 
 ```bash
-ng github-pages:deploy
-
 Built project successfully. Stored in "dist/".
 
 In order to deploy this project via GitHub Pages, we must first create a repository for it.
@@ -43,20 +41,27 @@ Choose 'public_repo' as scope and then click 'Generate token'.
 Deployed! Visit https://drewbailey.github.io/my-todo-app/
 Github pages might take a few minutes to show the deployed site.
 ```
-And that is it! The app is now deployed on github. It is easy to see how great this tool can be for quickly building prototypes and having them deployed somewhere for others to view. Now that we have a grasp on the fundamentals of the cli, lets look at a few other commands it provides and make our app a little more useful.
 
+That is it! The app is now deployed on github. It is easy to see how great this tool can be for quickly building prototypes and having them deployed somewhere for others to view. Now that we have a grasp on the fundamentals of the cli, lets look at a few other commands it provides and make our app a little more useful.
 
-At this point in time you would generally have to configure something like Grunt or Gulp to build your app. Thanks to the angular-cli you can now just run `ng build` and everything is taken care of for you!
 
 
 ~~~~~~~~~ TODO ~~~~~~~~~~~
+### Other commands
+Below are some of the available commands Angular-CLI has to offer, the project is still currently in beta and I'm sure new features will be rolling out so make sure to keep an eye on the [repo](https://github.com/angular/angular-cli).
 ```
 ng build
-ng test
+ng test - runs unit tests, using karma
 ng e2e
 ng serve
 ng deploy - to github pages
+ng completion - outputs shell script to add to your .bashrc or .zshrc for autocompletion when using ng commands
+ng init - creates a new angular folder in the current directory
+ng doc [keyword] - opens browser tab to documentation page of keyword
+ng lint - runs the codelyzer linter against your project
 ```
+[reference pdf](https://cli.angular.io/reference.pdf)
+
 ng generate component my-comp
 ng generate directrive|pipe|service|route|class
-https://cli.angular.io/reference.pdf
+
