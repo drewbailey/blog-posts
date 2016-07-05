@@ -18,6 +18,8 @@ ng new my-todo-app
 We have our base application, now what? Lets run it and see what happens. running `ng serve` will build and run your application locally. You should see something similar to the following output.
 ![ng serve screenshot](/images/blog-post-todo-02.jpg)
 
+You will notice it says `Livereload server on http://localhost:49154`, This is because ng is running BrowserSync for us to watch for file changes. This means that we don't need to restart our server whenever we make changes to our app.
+
 And if we open our browser to http://localhost:4200/ we see the following, our application is up and running with minimal effort!
 ![app running locally](/images/blog-post-todo-01.jpg)
 
@@ -44,6 +46,9 @@ Github pages might take a few minutes to show the deployed site.
 
 That is it! The app is now deployed on github. It is easy to see how great this tool can be for quickly building prototypes and having them deployed somewhere for others to view. Now that we have a grasp on the fundamentals of the cli, lets look at a few other commands it provides and make our app a little more useful.
 
+### Generators
+
+![component generation](/images/blog-post-todo-04.jpg)
 
 
 ~~~~~~~~~ TODO ~~~~~~~~~~~
@@ -52,7 +57,7 @@ Below are some of the available commands Angular-CLI has to offer, the project i
 ```
 ng build
 ng test - runs unit tests, using karma
-ng e2e
+ng e2e - runs end-to-end tests using protractor.
 ng serve
 ng deploy - to github pages
 ng completion - outputs shell script to add to your .bashrc or .zshrc for autocompletion when using ng commands
