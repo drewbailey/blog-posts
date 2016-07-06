@@ -16,11 +16,13 @@ ng new my-todo-app
 ```
 
 We have our base application, now what? Lets run it and see what happens. running `ng serve` will build and run your application locally. You should see something similar to the following output.
+
 ![ng serve screenshot](/images/blog-post-todo-02.jpg)
 
 You will notice it says `Livereload server on http://localhost:49154`, This is because ng is running BrowserSync for us to watch for file changes. This means that we don't need to restart our server whenever we make changes to our app.
 
 And if we open our browser to http://localhost:4200/ we see the following, our application is up and running with minimal effort!
+
 ![app running locally](/images/blog-post-todo-01.jpg)
 
 
@@ -44,9 +46,10 @@ Deployed! Visit https://drewbailey.github.io/my-todo-app/
 Github pages might take a few minutes to show the deployed site.
 ```
 
-That is it! The app is now deployed on github. It is easy to see how great this tool can be for quickly building prototypes and having them deployed somewhere for others to view. Now that we have a grasp on the fundamentals of the cli, lets look at a few other commands it provides and make our app a little more useful.
+That is it! The app is now deployed on github. It is easy to see how great this tool can be for quickly building prototypes and having them deployed somewhere for others to view. Now that we have a grasp on the creation and deployment aspects of the cli, lets look at a few other commands it provides and make our app a little more useful.
 
 ### Generators
+We can generate a new component by invoking `ng g component` (generate is synonmyous with `g`). Angular has decided to use a specific naming convention in Angular 2. Components will have name.component.ts so when naming your components using the cli don't include component or else you will end up with my-component.component.ts.
 
 ![component generation](/images/blog-post-todo-04.jpg)
 
