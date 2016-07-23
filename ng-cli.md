@@ -1,3 +1,12 @@
+## Version 2 Proposed edits
+- The rise of Popular Javascript frameworks moving towards convention over configuration
+- Many JS frameworks out there, a lot of tutorials have initial focus on setting up build processes, this can tend to scare off new users who really just want to learn the framework and start coding.
+- Beginnings - Ember CLI (non js projects like rails generators)
+- The Rise of Angular 2 and React, NG-CONF angular 2 announces ng-cli tool to build, run, and deploy Angular 2 applications with 0 configuration needed.
+- The newly annouced create-react-app follows a very similar approach.
+- Benefits of using cli tools that guide users to follow convention over configuration, start building things instead of spending a bunch of time setting up your application and build process.
+- 
+
 ## Up and running with Angular 2 and the Angular-CLI
 
 There has been a lot of talk about Angular 2 and all the new features and tooling it brings. Whether you are interested in playing around with the new framework to see what its all about or are getting ready to use it for your next production application, setting up something new is never a task I look forward to, until now. 
