@@ -47,8 +47,71 @@ As of writing this (July 2016) The first section of the [Angular Quickstart](htt
 
 ```
 
-If I am new to Javascript or coming from a project where I simply including JQuery into my HTML this can look very intimidating. What did I just blindly copy? What does this have to do with Angular and why do I also need a `tsconfig.json, typings.json and systemjs.config.js` file? 
+If I am new to Javascript or coming from a project where I simply including JQuery into my HTML this can look very intimidating. What did I just blindly copy? What does this have to do with Angular and why do I also need a `tsconfig.json, typings.json and systemjs.config.js` file? Sure these are probably things I will become familiar with over time, but is it absolutely necessary to deal with them right now? 
 
+These are questions I found myself asking the internet and it turns out the answer is no! Both Angular and React have recently implemented ways to quickly get up and running with their frameworks as painlessly as possible. For the rest of this article I'm going to show just how easy it is to get up and running with an Angular application as well as a React application using their CLI tools to help up scaffold a new application.
+
+## Angular
+The [Angular-CLI](https://cli.angular.io/) was announced just in time for this years NG-Conf back in May. Mike Brocchi had a great talk about the new project at this years NG-Conf which you can find [here](https://youtu.be/wHZe6gGI5RY). Now lets dive in and build a new Angular applicaiton.
+
+### Install the CLI
+Getting started with the angular-cli is easy, to install just run the following command.
+
+```bash
+npm install -g angular-cli
+```
+
+Next, simply call `ng new` plus a name for your application and the cli will automatically scaffold you a new angular 2 project and install all of your dependencies!
+```bash
+ng new my-todo-app
+```
+Angular just created a lot of files for us, most of which we can ignore for now but the `src` directory is the only thing we will be looking at.
+```
+my-todo-app/src
+├── app
+│   ├── app.component.css
+│   ├── app.component.html
+│   ├── app.component.spec.ts
+│   ├── app.component.ts
+│   ├── environment.ts
+│   ├── index.ts
+│   └── shared
+│       └── index.ts
+├── favicon.ico
+├── index.html
+├── main.ts
+├── system-config.ts
+├── tsconfig.json
+└── typings.d.ts
+```
+
+Lets take a look at `app.component.ts`. Granted not much is going on here but let's try running our project and see what happens
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+  moduleId: module.id,
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css']
+})
+export class AppComponent {
+  title = 'app works!';
+}
+```
+
+We have our base application, now what? Lets run it and see what happens. running `ng serve` will build and run your application locally. You should see something similar to the following output.
+
+![ng serve screenshot](/images/blog-post-todo-02.jpg)
+
+And if we open our browser to http://localhost:4200/ we see the following, our application is up and running with minimal effort!
+
+![app running locally](/images/blog-post-todo-01.jpg)
+
+It's pretty easy to see how this tool can save us time and help users not get scared off by configuration and this is only the tip of the iceburg for all the functionality that the tool provides us, but before we get too far into that lets take a look at Reacts new tool and see how quickly we can get up and running.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Version 2 Proposed edits
 - The rise of Popular Javascript frameworks moving towards convention over configuration
 - Many JS frameworks out there, a lot of tutorials have initial focus on setting up build processes, this can tend to scare off new users who really just want to learn the framework and start coding.
