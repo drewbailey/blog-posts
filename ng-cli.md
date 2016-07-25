@@ -1,3 +1,54 @@
+## The Rise of Javascript CLIs
+
+You are a developer who wants to evaluate a Javascript framework to see if it is going to work for your project. Your time is important to you so the last thing you want to do is try to decide which build tools to use or which packages to include in your project. That's not what is immediately important to you, the actual code itself and the features the framework provides you is what you care about, so why waste time configuring your project?
+
+As of writing this (July 2016) The first section of the [Angular Quickstart](https://angular.io/docs/ts/latest/quickstart.html) is all about setup. It asks readers to create a project folder (easy enough), add a package definition on configuration files and install packages. Let's look at the first file we are asked to create, `package.json`.
+
+```json
+// Taken from https://angular.io/docs/ts/latest/quickstart.html
+{
+  "name": "angular2-quickstart",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.4",
+    "@angular/compiler": "2.0.0-rc.4",
+    "@angular/core": "2.0.0-rc.4",
+    "@angular/forms": "0.2.0",
+    "@angular/http": "2.0.0-rc.4",
+    "@angular/platform-browser": "2.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
+    "@angular/router": "3.0.0-beta.1",
+    "@angular/router-deprecated": "2.0.0-rc.2",
+    "@angular/upgrade": "2.0.0-rc.4",
+    "systemjs": "0.19.27",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12",
+    "angular2-in-memory-web-api": "0.0.14",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings":"^1.0.4"
+  }
+}
+
+```
+
+If I am new to Javascript or coming from a project where I simply including JQuery into my HTML this can look very intimidating. What did I just blindly copy? What does this have to do with Angular and why do I also need a `tsconfig.json, typings.json and systemjs.config.js` file? 
+
 ## Version 2 Proposed edits
 - The rise of Popular Javascript frameworks moving towards convention over configuration
 - Many JS frameworks out there, a lot of tutorials have initial focus on setting up build processes, this can tend to scare off new users who really just want to learn the framework and start coding.
