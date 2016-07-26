@@ -117,7 +117,7 @@ It's pretty easy to see how this tool can save us time and help users not get sc
 
 React implented their own CLI tool with their newly release [Create React App](https://github.com/facebookincubator/create-react-app).
 
-
+![React Landing Page](/images/react-app-2.gif)
 
 ## Version 2 Proposed edits
 - The rise of Popular Javascript frameworks moving towards convention over configuration
