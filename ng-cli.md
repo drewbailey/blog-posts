@@ -111,7 +111,14 @@ And if we open our browser to http://localhost:4200/ we see the following, our a
 
 It's pretty easy to see how this tool can save us time and help users not get scared off by configuration and this is only the tip of the iceburg for all the functionality that the tool provides us, but before we get too far into that lets take a look at Reacts new tool and see how quickly we can get up and running.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+React implented their own CLI tool with their newly release [Create React App](https://github.com/facebookincubator/create-react-app).
+
+
+
 ## Version 2 Proposed edits
 - The rise of Popular Javascript frameworks moving towards convention over configuration
 - Many JS frameworks out there, a lot of tutorials have initial focus on setting up build processes, this can tend to scare off new users who really just want to learn the framework and start coding.
