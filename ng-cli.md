@@ -112,8 +112,6 @@ And if we open our browser to http://localhost:4200/ we see the following, our a
 It's pretty easy to see how this tool can save us time and help users not get scared off by configuration and this is only the tip of the iceburg for all the functionality that the tool provides us, but before we get too far into that lets take a look at Reacts new tool and see how quickly we can get up and running.
 
 
-
-
 React implented their own CLI tool with their newly release [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ![React Landing Page](/images/react-app-2.gif?width)
