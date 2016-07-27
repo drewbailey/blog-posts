@@ -1,6 +1,10 @@
 ## The Rise of Javascript CLIs
 
-You are a developer who wants to evaluate a Javascript framework to see if it is going to work for your project. Your time is important to you so the last thing you want to do is try to decide which build tools to use or which packages to include in your project. That's not what is immediately important to you, the actual code itself and the features the framework provides you is what you care about, so why waste time configuring your project?
+You are a developer who wants to evaluate a Javascript framework to see if it is going to work for your project. Your time is important to you so the last thing you want to do is spend time setting up and configuring your project just trying to get it to run. That's not what is immediately important to you, the actual application code itself and the features the framework provides you is what you care about, so why waste time configuring your project? 
+
+Thankfully you are in luck, many popular frameworks such as [Ember.js](http://emberjs.com/), (Angular)[https://angular.io/] and (React)[https://facebook.github.io/react/] all provide ways to quickly start building applications, no configuration required. In this post we'll look at some of the features provided by Angular and React to help developers quickly get there apps up and running.
+
+## Angular CLI
 
 As of writing this (July 2016) The first section of the [Angular Quickstart](https://angular.io/docs/ts/latest/quickstart.html) is all about setup. It asks readers to create a project folder (easy enough), add a package definition on configuration files and install packages. Let's look at the first file we are asked to create, `package.json`.
 
