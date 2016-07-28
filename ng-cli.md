@@ -8,10 +8,6 @@ Thankfully, many popular frameworks such as [Ember.js](http://emberjs.com/), [An
 
 As of writing this (July 2016) The first section of the [Angular Quickstart](https://angular.io/docs/ts/latest/quickstart.html) is all about setup. To a seasoned developer most of this can be easily glossed over, the guide asks readers to create a project folder, add a package.json and a few other configuration files and install your dependencies. Let's look at the first file we are asked to create, `package.json`.
 
-But, to a less trained eye, it's not hard to imagine how confused the reader might get looking into what `"tsc && concurrently \"npm run tsc:w\" \"npm run lite\" "` does or why they even need a `systemjs.config.js` file.
-
-
-
 ```json
 // Taken from https://angular.io/docs/ts/latest/quickstart.html
 {
@@ -52,8 +48,13 @@ But, to a less trained eye, it's not hard to imagine how confused the reader mig
     "typings":"^1.0.4"
   }
 }
-
 ```
+
+It's not hard to imagine how confused the reader might get looking into what `"tsc && concurrently \"npm run tsc:w\" \"npm run lite\" "` does, and the guide isn't trying to get readers to look into it, they just want you to copy and paste the file. So what is gained by the user for this inital set up? Have they learned anything about Angular? Maybe, they understand some of the dependencies or the need to transpile TypeScript into Javascript but not much about the framework itself is gained.
+
+What if instead the user could just run `npm install -g angular-cli` and then `ng new hello-world`? The Angular-Cli has abstracted away the inital complexity of setting up and configuring a project and made it a breeze for someone to get started with Angular. This is in my mind a fantasic trend for Javascript frameworks. Many other languages/frameworks like Rails have been using generators for ages, and shifting users to follow convention over configuration is an awesome trend that I hope continues.
+
+
 
 If I am new to Javascript or coming from a project where I simply including JQuery into my HTML this can look very intimidating. What did I just blindly copy? What does this have to do with Angular and why do I also need a `tsconfig.json, typings.json and systemjs.config.js` file? Sure these are probably things I will become familiar with over time, but is it absolutely necessary to deal with them right now? 
 
