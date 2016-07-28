@@ -2,11 +2,15 @@
 
 You are a developer who wants to evaluate a Javascript framework. Your time is important to you so the last thing you want to do is spend time setting up and configuring your project just trying to get it to build. That's not what is immediately important to you, the actual application code itself and the features the framework provides you is what you care about, so why waste time worrying about configuration and what packages to include for your project? 
 
-Thankfully you are in luck, many popular frameworks such as [Ember.js](http://emberjs.com/), [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) all provide ways to quickly start building applications, no configuration required. In this post we'll look at some of the features provided by Angular and React to help developers quickly get apps up and running.
+Thankfully, many popular frameworks such as [Ember.js](http://emberjs.com/), [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) all provide ways to quickly start building applications, no configuration required. It's important to note there are also plenty of code generator tools out there, namely [Yeoman](http://yeoman.io/) but many new developers are unaware or unsure of how to start using third party tools which is why its great to see Angular and React follow Ember's footsteps in implementing CLIs by the same team that implented the frameworks themselves. In this post we'll look at some of the features provided by Angular and React to help developers quickly get apps up and running.
 
-## Angular CLI
+## The Case for CLIs
 
-As of writing this (July 2016) The first section of the [Angular Quickstart](https://angular.io/docs/ts/latest/quickstart.html) is all about setup. It asks readers to create a project folder (easy enough), add a package definition on configuration files and install packages. Let's look at the first file we are asked to create, `package.json`.
+As of writing this (July 2016) The first section of the [Angular Quickstart](https://angular.io/docs/ts/latest/quickstart.html) is all about setup. To a seasoned developer most of this can be easily glossed over, the guide asks readers to create a project folder, add a package.json and a few other configuration files and install your dependencies. Let's look at the first file we are asked to create, `package.json`.
+
+But, to a less trained eye, it's not hard to imagine how confused the reader might get looking into what `"tsc && concurrently \"npm run tsc:w\" \"npm run lite\" "` does or why they even need a `systemjs.config.js` file.
+
+
 
 ```json
 // Taken from https://angular.io/docs/ts/latest/quickstart.html
