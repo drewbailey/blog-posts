@@ -52,44 +52,15 @@ As of writing this (August 2016) The first section of the [Angular Quickstart](h
 
 It's not hard to imagine how confused the reader might get looking into what `"tsc && concurrently \"npm run tsc:w\" \"npm run lite\" "` is trying to do, and the guide isn't trying to get readers to look into it, they just want you to copy and paste the file. So what is gained by a new comer for this inital set up? Have they learned anything about Angular? Maybe they understand some of the dependencies or the need to transpile TypeScript into Javascript but not much about the framework itself is gained.
 
-What if instead the user could just run `npm install -g angular-cli` and then `ng new hello-world`? Thanks to the Angular-Cli, the inital set up and configuration of an angular application has abstracted away the inital complexity of setting up and configuring a project and made it a breeze for someone to get started with Angular. In my mind a fantasic trend for Javascript frameworks. Many other languages/frameworks like Rails have been using generators for ages, and shifting users to follow convention over configuration is an awesome trend to get developers developing instead of worrying about configuration until they really need.
+What if instead the user could just run `npm install -g angular-cli` then `ng new hello-world` and then finally `ng serve` and have an application up and running in a matter of no time. Thanks to the [Angular-Cli](https://cli.angular.io/), the inital set up and configuration of an angular application has abstracted away the inital complexity of setting up and configuring a project and made it a breeze for someone to get started with Angular.
 
-
-React implented their own CLI tool with their newly release [Create React App](https://github.com/facebookincubator/create-react-app).
+React has recently released their own cli tool called [Create React App](https://github.com/facebookincubator/create-react-app). The React cli follows in a similar path to get up and running with the same simple simplicity of running `npm install -g create-react-app` followed by `create-react-app hello-world` and that is it! React even gets the user excited about its framework by including a nice splash page when the application is first run locally by running `npm start`
 
 ![React Landing Page](/images/react-app-2.gif?width)
 
+In my mind a fantasic trend for Javascript frameworks. Many other languages/frameworks like Rails have been using generators for ages, and shifting users to follow convention over configuration is an awesome trend to get developers developing instead of worrying about configuration until they really need.
 
+If you are interested in learning more about the Angular-CLI Ihighly reccomend looking at Mike Brocchi's talk from ng-conf 2016 which you can find [here](https://youtu.be/wHZe6gGI5RY). The [github repo](https://github.com/angular/angular-cli) for the project also has a lot of good information, be sure to start star it so you can watch it evolve has the framework matures!
 
-## Version 2 Proposed edits
-- The rise of Popular Javascript frameworks moving towards convention over configuration
-- Many JS frameworks out there, a lot of tutorials have initial focus on setting up build processes, this can tend to scare off new users who really just want to learn the framework and start coding.
-- Beginnings - Ember CLI (non js projects like rails generators)
-- The Rise of Angular 2 and React, NG-CONF angular 2 announces ng-cli tool to build, run, and deploy Angular 2 applications with 0 configuration needed.
-- The newly annouced create-react-app follows a very similar approach.
-- Benefits of using cli tools that guide users to follow convention over configuration, start building things instead of spending a bunch of time setting up your application and build process.
-- 
+Additional info for the Create React App can be found on their [github page](https://github.com/facebookincubator/create-react-app). The [blog post](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html) which introduced the cli also has some good background explainging the need for a simiplier way to introduce users into javascript frameworks.
 
-
-I also highly reccomend looking at Mike Brocchi's talk from ng-conf 2016 which you can find [here](https://youtu.be/wHZe6gGI5RY). Now lets dive in.
-
-
-### Deploy our Application
-So far we have seen how the Angular-CLI can create and run our application locally, but what if we want to deploy it? The Angular-CLI provides us a way to quickly allow others to see our application by using [github pages](https://pages.github.com/). To deploy our application we just need to simply run a single command, `ng github-pages:deploy` and our app will be live on github! Below is the output and instructions provided by the tool.
-
-```bash
-Built project successfully. Stored in "dist/".
-
-In order to deploy this project via GitHub Pages, we must first create a repository for it.
-It's safer to use a token than to use a password, so you will need to create one.
-
-Go to the following page and click 'Generate new token'.
-https://github.com/settings/tokens
-
-Choose 'public_repo' as scope and then click 'Generate token'.
-
-? Please enter GitHub token you just created (used only once to create the repo): [token]
-? and your GitHub user name: drewbailey
-Deployed! Visit https://drewbailey.github.io/my-todo-app/
-Github pages might take a few minutes to show the deployed site.
-```
