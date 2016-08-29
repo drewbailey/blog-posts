@@ -1,12 +1,12 @@
 ## The Rise of Javascript CLIs
 
-You are a developer who wants to evaluate a Javascript framework. Your time is important to you so the last thing you want to do is get stuck setting up your project directory and build configuration. All you care about is the code and features the framework provides you, so why waste time worrying about configuration and and what packages to include to get your project off the ground? 
+You are a developer who wants to evaluate a Javascript framework. Your time is important to you so the last thing you want to do is get stuck setting up your project directory and configuration settings. All you care about is the code and features the framework provides you, so why waste time worrying about configuration and and what packages to include to get your project off the ground? 
 
 This has been a complaint the JS community has been [suffering](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.sssfga3pu) which some refer to as JavaScript fatigue and thankfully many popular frameworks are listening. Projects such as [Ember.js](http://emberjs.com/), [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) all provide ways to quickly start building applications, no configuration required. It's important to note there are also plenty of code generator tools out there, namely [Yeoman](http://yeoman.io/) but many new developers are unaware or unsure of how to start using third party tools which is why its great to see Angular and React follow Ember's footsteps in implementing CLIs by the same team that implented the frameworks themselves. In this post we'll look at some of the time saving features provided by Angular and React to help developers quickly get apps up and running.
 
-## The Case for CLIs
+## Angular and React CLIs at a glance
 
-As of writing this (August 2016) The first section of the [Angular Quickstart](https://angular.io/docs/ts/latest/quickstart.html) is all about setup. To a seasoned developer most of this can be easily glossed over but to a new comer it can easily be quite daunting, the guide asks readers to create a project folder, add a package.json and a few other configuration files and install your dependencies. Let's look at the first file we are asked to create, `package.json`.
+As of writing this (August 2016) The first section of the [Angular Quickstart](https://angular.io/docs/ts/latest/quickstart.html) is all about setup. To a seasoned developer most of this can be easily glossed over but to a new comer it can easily be daunting, the guide asks readers to create a project folder, add a package.json and a few other configuration files and install your dependencies. Let's look at the first file we are asked to create, `package.json`.
 
 ```json
 // Taken from https://angular.io/docs/ts/latest/quickstart.html
