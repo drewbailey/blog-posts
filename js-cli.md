@@ -24,6 +24,7 @@ create-react-app my-app
 cd my-app
 npm start
 ```
+![React Landing Page](images/react-app-2.gif)
 
 ### Vue
 ```js
