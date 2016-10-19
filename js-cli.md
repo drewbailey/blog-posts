@@ -5,7 +5,7 @@ The rapid growth of javascript over the past few years has lead to a large varie
 Projects such as [Angular](https://cli.angular.io/) and [React](https://github.com/facebookincubator/create-react-app) and [Vue.js](https://github.com/vuejs/vue-cli) all provide command line interfaces (CLIs) to quickly start building applications with little to no configuration required. In this post we'll see how easy it is to get up and running with a new application using each frameworks CLI.
 
 ## Creating Your Application
-Creating an application in Angular, React or Vue is a breeze thanks to their cli. In this section we will take a quick look at how easy it is to scaffold a new application each framework.
+Creating an application in Angular, React or Vue is a breeze thanks to their CLIs. In this section we will take a quick look at just how easy it is to scaffold a new application in each framework.
 
 ### Angular
 ```bash
@@ -13,7 +13,6 @@ npm install -g angular-cli
 ng new my-app
 cd my-app
 ng serve
-** NG Live Development Server is running on http://localhost:4200. **
 ```
 ![Angular Landing Page](images/blog-post-todo-01.jpg)
 
@@ -42,7 +41,7 @@ $ vue list
   ★  webpack - A full-featured Webpack + vue-loader setup with hot reload, linting, testing & css extraction.
   ★  webpack-simple - A simple Webpack + vue-loader setup for quick prototyping
 ```
-After you decide which template you would like to use the installation and set up is similar to Angular and React.
+After you decide which template you would like to use the installation and set up is similar to Angular and React but it does not run npm install in the background for you.
 ```bash
 vue init webpack my-appy
 cd my-app
@@ -52,7 +51,7 @@ npm run dev
 ![Vue Landing Page](images/vue-app.jpeg)
 
 ## Additional features
-Currently, the React and Vue 
+Currently, the React and Vue CLIs are fairly simple and the core functionality they currently both provide is mainly to initialize a new application. On the other hand, the Angular CLI is much more feature complete and allows you to easily scaffold new components, directives, services, and even lets you build and deploy your application to GitHub pages. 
 
 ## Closing
 
