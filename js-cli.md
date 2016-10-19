@@ -29,7 +29,15 @@ npm start
 ### Vue
 ```js
 npm install -g vue-cli
+vue init webpack my-appy
+vue init webpack-simple my-appy
+vue init browserify my-appy
+vue init browserify-simple my-appy
+vue init simple my-appy
 
+cd my-app
+npm install
+npm run dev
 ```
 
 ## Angular and React CLIs at a glance
