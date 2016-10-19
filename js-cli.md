@@ -1,8 +1,35 @@
-## The Rise of Javascript CLIs
+## React vs Angular vs Vue, A look at modern javascript framework CLIs
 
-You are a developer who wants to evaluate a Javascript framework. Your time is important to you so the last thing you want to do is get stuck setting up your project directory and configuration settings. All you care about is the code and features the framework provides you, so why waste time worrying about setup and what packages to include to get your project off the ground? 
+The rapid growth of javascript over the past few years has lead to a large variety of build tools and configuration options to get a simple application off the ground and running. This has been a [complaint](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) the JS community has been [suffering](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4) for some time, which some refer to as JavaScript fatigue. Thankfully many popular frameworks are listening. 
 
-This has been a [complaint](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) the JS community has been [suffering](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4) for some time, which some refer to as JavaScript fatigue and thankfully many popular frameworks are listening. Projects such as [Ember.js](http://emberjs.com/), [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) all provide ways to quickly start building applications, no configuration required. It's important to note there are also plenty of code generator tools out there, namely [Yeoman](http://yeoman.io/) but many new developers are unaware or unsure of how to start using third party tools which is why its great to see Angular and React follow Ember's footsteps in implementing CLIs by the same team that implented the frameworks themselves. In this post we'll look at some of the time saving features provided by Angular and React to help developers quickly get apps up and running.
+Projects such as [Angular](https://cli.angular.io/) and [React](https://github.com/facebookincubator/create-react-app) and [Vue](https://github.com/vuejs/vue-cli) all provide command line interfaces (CLIs) to quickly start building applications, no configuration required. In this post we'll look at some of the time saving features provided by these tools to help developers quickly get apps up and running.
+
+## Creating Your Application
+Creating an application in Angular, React or Vue is a breeze thanks to their cli. In this section we will take a quick look at how easy it is to scaffold a new application each framework.
+
+### Angular
+```js
+npm install -g angular-cli
+ng new my-app
+cd my-app
+ng serve
+** NG Live Development Server is running on http://localhost:4200. **
+```
+![Angular Landing Page](images/blog-post-todo-01.jpg)
+
+### React
+```js
+npm install -g create-react-app
+create-react-app my-app
+cd my-app
+npm start
+```
+
+### Vue
+```js
+npm install -g vue-cli
+
+```
 
 ## Angular and React CLIs at a glance
 
