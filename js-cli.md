@@ -29,7 +29,7 @@ npm start
 ```bash
 npm install -g vue-cli
 ```
-Vue gives users different template options to help them best their needs. Running `vue list` after you have installed the cli shows you each option with brief description of each.
+Vue gives users different template options to help them best suite their needs. Running `vue list` after you have installed the cli shows you each option with brief description of what they offer.
 
 ```bash
 $ vue list                                                                                                                                 
